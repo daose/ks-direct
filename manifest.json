@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "KSDirect",
+  "version": "1.0",
+  "description": "Goes directly to video",
+  "icons": {
+    "48": "icons/icon_48.png",
+    "96": "icons/icon_96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.kissanime.ru/Special/AreYouHuman*"],
+      "js": ["ks.js"]
+    },
+    {
+      "matches": ["*://*.rapidvideo.com/*"],
+      "js": ["rv.js"]
+    }
+  ]
+}
