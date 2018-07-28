@@ -1,4 +1,4 @@
-# KS DIRECT
+# KSDirect
 
 ## Installation
 
