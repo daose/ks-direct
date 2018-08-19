@@ -1,7 +1,12 @@
 console.log('RV script starting');
 
 mp4Links = document.getElementsByTagName('source');
-if (mp4Links.length > 0) {
+forms = document.getElementsByTagName('form');
+
+if (forms.length > 0) {
+  form = forms[0];
+  form.submit();
+} else if (mp4Links.length > 0) {
   mp4Link = mp4Links[0].src
   console.log('Found mp4 link: ', mp4Link);
 
